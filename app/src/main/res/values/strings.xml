@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Myo_Keyboard</string>
+    <string name="scan_string">SCAN</string>
+    <string name="save_string">SAVE</string>
+    <string name="keyboard_string">KEYS</string>
+    <string name="mouse_string">MOUSE</string>
+    <string name="copyright_string">Copyright info</string>
+    <string name="device_name_label_string">Device name:</string>
+    <string name="device_name_string">None</string>
+    <string name="device_address_label_string">Device address:</string>
+    <string name="device_address_string">None</string>
+    <string name="vibrate_string">VIBRATE</string>
+    <string name="q_string">Q</string>
+    <string name="w_string">W</string>
+    <string name="e_string">E</string>
+    <string name="r_string">R</string>
+    <string name="a_string">A</string>
+    <string name="s_string">S</string>
+    <string name="d_string">D</string>
+    <string name="f_string">F</string>
+    <string name="default_text_string">Default Text</string>
+</resources>

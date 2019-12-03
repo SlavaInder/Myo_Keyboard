@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainMenu">
+
+    <Button
+        android:id="@+id/Scan"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:onClick="onClickScan"
+        android:text="@string/scan_string"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Mouse"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/mouse_string"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/Vibrate"
+        app:layout_constraintTop_toBottomOf="@+id/Vibrate" />
+
+    <Button
+        android:id="@+id/Keyboard"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:onClick="OnClickKeys"
+        android:text="@string/keyboard_string"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/Mouse"
+        app:layout_constraintTop_toBottomOf="@+id/Mouse" />
+
+    <Button
+        android:id="@+id/Save"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:text="@string/save_string"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/Keyboard"
+        app:layout_constraintTop_toBottomOf="@+id/Keyboard" />
+
+    <TextView
+        android:id="@+id/CopyRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/copyright_string"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/DeviceNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:text="@string/device_name_label_string"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/DeviceName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/device_name_string"
+        app:layout_constraintStart_toStartOf="@+id/DeviceNameLabel"
+        app:layout_constraintTop_toBottomOf="@+id/DeviceNameLabel" />
+
+    <TextView
+        android:id="@+id/DeviceAddressLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/device_address_label_string"
+        app:layout_constraintStart_toStartOf="@+id/DeviceName"
+        app:layout_constraintTop_toBottomOf="@+id/DeviceName" />
+
+    <TextView
+        android:id="@+id/DeviceAddress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="@string/device_address_string"
+        app:layout_constraintStart_toStartOf="@+id/DeviceAddressLabel"
+        app:layout_constraintTop_toBottomOf="@+id/DeviceAddressLabel" />
+
+    <Button
+        android:id="@+id/Vibrate"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="15dp"
+        android:onClick="onClickVibrate"
+        android:text="@string/vibrate_string"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="@+id/Scan"
+        app:layout_constraintTop_toBottomOf="@+id/Scan" />
+</androidx.constraintlayout.widget.ConstraintLayout>
