@@ -70,7 +70,7 @@ public class Keyboard extends AppCompatActivity implements IReportEmg {
         temp = channels[0][0];
 
         // update ui
-        uiHandler.sendEmptyMessage(0);
+        uiHandler.sendEmptyMessage(0); 
     }
 
 
