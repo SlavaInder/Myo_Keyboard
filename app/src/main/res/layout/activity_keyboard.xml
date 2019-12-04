@@ -94,6 +94,7 @@
         android:id="@+id/F"
         android:layout_width="60dp"
         android:layout_height="60dp"
+        android:onClick="onClickClear"
         android:text="@string/f_string"
         android:textSize="24sp"
         app:layout_constraintEnd_toEndOf="parent"
